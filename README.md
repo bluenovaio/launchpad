@@ -4,20 +4,40 @@
     </p>
     <hr>
     <p align="center">
-       Github Action for deploying to serverless platforms such as Cloud Run.
+       Opinionated CLI tool for generating deployment Github Action workflows. 
     </p>
     <br>
     <br>
 </div>
 
-## Usage
+## Getting Started
 
-TBD
+1. Install launchpad
 
-## Platform Support
+```shell
+npm install -g @bluenova/launchpad
+```
+2. Create initial `launchpad.yaml`
+```shell
+launchpad init
+```
+3. Configure your yaml file
+4. Launch your service! 
 
-| Cloud Provider        | Service     | Supported |
-|-----------------------|-------------|-----------|
-| Google Cloud Platform | Cloud Run   | Yes       |
-| Amazon Web Services   | Fargate     | No        |
-| Azure                 | App Service | No        |
+## Programmatic Access
+
+```typescript
+import * as launchpad from "bluenova/launchpad";
+
+// Generate a workflow
+launchpad.generate({
+    name: 'my-service'
+    // other configs
+});
+```
+
+## Features
+
+* Preview Environments
+* Environment Segmentation
+* Environment-Based Rollbacks
