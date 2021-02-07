@@ -47,12 +47,12 @@ launchpad init
 
 ## Environments 
 
-We have multiple "Environments" that are segmented based on Security, Best Practice and the ability to
+LaunchPad provides multiple "Environments" that are segmented based on Security, Best Practice, and the ability to
 safely test code changes. See the table and diagram below for more details:
 
 | Environment    | Project        | Description                                                                                                                                                       |
 |----------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Production     | Production     | Completely isolated production environment that end-users will use.                                                                                               |
+| Production     | Production     | Completely isolated production environment that end-users will utilize.                                                                                           |
 | Pre-Production | Pre-Production | A UAT / Staging-like Environment meant for integration testing and a final step before pushing code to end users.                                                 |
 | Preview        | Pre-Production | A customized set of deployments for each Pull-request. These Environments will have their own DBs and interact with Pre-Production Services (NOT other Previews). |
 
