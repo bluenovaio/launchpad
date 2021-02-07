@@ -4,11 +4,32 @@
     </p>
     <hr>
     <p align="center">
-       Opinionated CLI tool for generating deployment Github Action workflows. 
+       A CLI tool for generating an opinionated deployment process via Github Action workflows. 
     </p>
     <br>
-    <br>
 </div>
+
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+
+# Overview
+
+WHY???
+
+## Table of Contents
+
+* [Features](#features)
+* [Getting Started](#getting-started)
+* [Environments](#environments)
+* [Environment Variables](#environment-variables)
+* [Requirements](#requirements)
+* [Programmatic Access](#programmatic-access)
+* [Gotchas & Other Important Tidbits](#gotchas--other-important-tid-bits)
+
+## Features
+
+* Customizable Preview Environments
+* Environment Segmentation
+* Environment-Based Rollbacks
 
 ## Getting Started
 
@@ -24,6 +45,18 @@ launchpad init
 3. Configure your yaml file
 4. Launch your service! 
 
+## Environments 
+
+## Environment Variables
+
+A set of pre-defined Environment variables are injected by default.
+
+## Requirements
+
+### Authentication
+
+### Secrets
+
 ## Programmatic Access
 
 ```typescript
@@ -36,8 +69,5 @@ launchpad.generate({
 });
 ```
 
-## Features
+## Gotchas & Other Important Tid-bits
 
-* Preview Environments
-* Environment Segmentation
-* Environment-Based Rollbacks
