@@ -84,6 +84,8 @@ that need to be met. Specicially cross-service authentication must be set up cor
 secrets must be added either to the repository or the organization. Please review the below to sections
 for more details.
 
+### Docker Registry
+
 ### Authentication
 
 TBD

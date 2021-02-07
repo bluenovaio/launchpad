@@ -1,5 +1,6 @@
 version: v1.0
 name: <%= name %>
+registry: [registry-url] # You can override this with a public or authenticated registry
 defaults:
   min: 0
   max: 5
