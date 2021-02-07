@@ -14,7 +14,7 @@
 # Overview
 
 LaunchPad is an *Opinionated Deployment Process* that we utilize at BlueNova. We deploy the vast majority of
-our services using Cloud Run, and we manage this process workflows generated using the LaunchPad CLI tool.
+our services using Cloud Run, and we manage this process with Github Action Workflows generated using the LaunchPad CLI tool.
 
 We set up this process based off of our past-experiences, and our need to **move fast and NOT break things**. 
 Please take a look below at the [Features](#features) section for more information on the *Whys* behind LaunchPad.
