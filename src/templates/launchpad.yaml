@@ -1,0 +1,14 @@
+version: v1.0
+name: <%= name %>
+defaults:
+  min: 0
+  max: 5
+  environmentVariables:
+    APP_NAME: <%= name %>
+environments:
+  preview:
+    environmentVariables: { }
+  preProduction:
+    environmentVariables: { }
+  production:
+    environmentVariables: { }
