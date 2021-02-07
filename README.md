@@ -4,7 +4,7 @@
     </p>
     <hr>
     <p align="center">
-       A CLI tool for generating an opinionated deployment process via Github Action workflows. 
+       A CLI tool for generating an <em>Opinionated Deployment Process</em> via Github Action workflows. 
     </p>
     <br>
 </div>
@@ -13,12 +13,11 @@
 
 # Overview
 
-LaunchPad is an "opinionated deployment process" that we use at BlueNova. We run the vast majority of
-our services using Cloud Run, and we manage this process using the LaunchPad CLI tool.
+LaunchPad is an *Opinionated Deployment Process* that we utilize at BlueNova. We deploy the vast majority of
+our services using Cloud Run, and we manage this process workflows generated using the LaunchPad CLI tool.
 
-We set up this process based off past experiences, and our need to "move fast and NOT break things". 
-Please take a look below at the [Features](#features) section for more information on the "Whys"
-behind LaunchPad.
+We set up this process based off of our past-experiences, and our need to **move fast and NOT break things**. 
+Please take a look below at the [Features](#features) section for more information on the *Whys* behind LaunchPad.
 
 ## Table of Contents
 
@@ -32,9 +31,15 @@ behind LaunchPad.
 
 ## Features
 
-* Customizable Preview Environments
-* Environment Segmentation
-* Environment-Based Rollbacks
+Below is a list of the core features or *Whys* behind LaunchPad. This list is not all-inclusive, but the primary
+reasons we built this tool.
+
+| Feature               | Status | Description                                                                          |
+|-----------------------|--------|--------------------------------------------------------------------------------------|
+| Preview Environments  | Todo   | A customized set of deployments for each Pull-request, used to test collaboratively. |
+| Customizable Previews | Todo   | Ability to parameterize and customize Previews on the fly.                           |
+| Versioned Rollbacks   | Todo   | Utilize workflows to rollback to previous versions of deployments.                   |
+| Preview Auto-Cleanup  | Todo   | Previews will clean themselves up when PRs are merged or closed.                     |
 
 ## Getting Started
 
@@ -48,7 +53,11 @@ npm install -g @bluenova/launchpad
 launchpad init
 ```
 3. Configure your yaml file
-4. Launch your service! 
+4. Generate your LaunchPad Workflows
+```shell
+launchpad generate
+```
+5. Launch your service! 
 
 ## Environments 
 
@@ -70,11 +79,24 @@ A set of pre-defined Environment variables are injected by default.
 
 ## Requirements
 
+Due to the fact LaunchPad is an *Opinionated Deployment Process*, there are certain requirements
+that need to be met. Specicially cross-service authentication must be set up correctly and certain 
+secrets must be added either to the repository or the organization. Please review the below to sections
+for more details.
+
 ### Authentication
+
+TBD
 
 ### Secrets
 
+TBD
+
 ## Programmatic Access
+
+If you ever want to build your own tool or extend LaunchPad, we provide the ability via the npm package
+to import certain functions and data structures to allow you to customize as needed. If you use the npm package
+in a programmatic fashion you CAN NOT customize the CLI tool (you will have to build your own).
 
 ```typescript
 import * as launchpad from "bluenova/launchpad";
@@ -88,3 +110,6 @@ launchpad.generate({
 
 ## Gotchas & Other Important Tid-bits
 
+Below is a list of things we think you should know or gotchas we've ran into with our *Opinionated Deployment Process*.
+
+TBD
