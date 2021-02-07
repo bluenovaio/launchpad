@@ -1,0 +1,39 @@
+{
+  "name": "launchpad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bluenovaio/launchpad.git",
+  "author": "@bluenovaio",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "prettier": "prettier --check \"**/*.{js,ts}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,ts}\"",
+    "launchpad": "ts-node src/cli.ts"
+  },
+  "bin": {
+    "launchpad": "./cli.js"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.0.5",
+    "@types/node": "^14.14.25",
+    "@types/yargs": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "typescript": "^4.1.3",
+    "yargs": "^16.2.0"
+  }
+}

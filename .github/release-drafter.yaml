@@ -1,0 +1,30 @@
+name-template: 'v$NEXT_MINOR_VERSION'
+tag-template: 'v$NEXT_MINOR_VERSION'
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'enhancement'
+  - title: '🔥 Hot Fixes'
+    labels:
+      - 'hotfix'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'bugfix'
+  - title: '🧰 Maintenance'
+    label: 'maintenance'
+  - title: '👮 Security'
+    label: 'security'
+  - title: '🤖 Dependabot'
+    label: 'dependencies'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+replacers:
+  - search: '/BN-(\d{1,5})/g'
+    replace: '[BN-$1](https://bluenova.atlassian.net/browse/BN-$1)'
+template: |
+  ## Changes
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS

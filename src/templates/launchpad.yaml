@@ -1,0 +1,15 @@
+version: v1.0
+name: <%= name %>
+registry: [registry-url] # You can override this with a public or authenticated registry
+defaults:
+  min: 0
+  max: 5
+  environmentVariables:
+    APP_NAME: <%= name %>
+environments:
+  preview:
+    environmentVariables: { }
+  preProduction:
+    environmentVariables: { }
+  production:
+    environmentVariables: { }
