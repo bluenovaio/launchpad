@@ -13,7 +13,12 @@
 
 # Overview
 
-WHY???
+LaunchPad is an "opinionated deployment process" that we use at BlueNova. We run the vast majority of
+our services using Cloud Run, and we manage this process using the LaunchPad CLI tool.
+
+We set up this process based off past experiences, and our need to "move fast and NOT break things". 
+Please take a look below at the [Features](#features) section for more information on the "Whys"
+behind LaunchPad.
 
 ## Table of Contents
 
