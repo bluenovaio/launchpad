@@ -4,7 +4,7 @@
     </p>
     <hr>
     <p align="center">
-       Opinionated CLI tool for generating deployment Github Action workflows. 
+       A tool for managing an Opinionated Deployment Process via Github Action workflows.
     </p>
     <br>
     <br>
