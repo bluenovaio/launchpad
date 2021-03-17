@@ -41,3 +41,7 @@ launchpad.generate({
 * Preview Environments
 * Environment Segmentation
 * Environment-Based Rollbacks
+
+---
+
+Logo: https://logomakr.com/9zRfUt
